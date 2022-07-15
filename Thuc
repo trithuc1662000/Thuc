@@ -82,7 +82,7 @@ wait(1)
 	end
 	function peace2()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = ""Daishi";
+			Title = "Daishi";
 			Text = "Welcome";
 		})
 	end
@@ -100,7 +100,7 @@ function backspawn()
  
 	function backspawn2()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = ""Daishi";
+			Title = "Daishi";
 			Text = "BackSpawn";
 		})
 	end
@@ -130,7 +130,7 @@ end end end)
  
 	function godmode2()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = ""Daishi";
+			Title = "Daishi";
 			Text = "GodMode ON ";
 		})
 	end
