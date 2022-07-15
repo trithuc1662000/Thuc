@@ -344,7 +344,7 @@ local Mouse = Playe:GetMouse()
  
 Mouse.KeyDown:connect(function(Key)
  Key = Key:lower()
- if Key == ']' then
+ if Key == '.' then
     Playe.Character.Humanoid.Health = 0
 end
 end)
