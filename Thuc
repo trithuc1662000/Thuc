@@ -61,7 +61,7 @@ function respawnf()
 	end
 	function respawnf2()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "Boys#0173";
+			Title = "Daishi";
 			Text = "FasterReset";
 		})
 	end
@@ -88,7 +88,7 @@ wait(1)
 	end
 	local Player = game.Players.LocalPlayer
 	Player.Chatted:connect(function(cht)
-		if cht:match("PeacePlace") then
+		if cht:match("Secrect") then
 			peace()
 			peace2()
 		end
