@@ -371,16 +371,16 @@ slow = false
  
 local mouse = game.Players.LocalPlayer:GetMouse()
 mouse.KeyDown:connect(function(key)
-if key == "[" then
+if key == "k" then
 game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "No-Slow Enabled";
-        Text = "Press ] to disable.";
+        Text = "Press - to disable.";
         })
 _G.Skiznillett = noslow
 elseif key == "-" then
 game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "No-Slow Disabled";
-        Text = "Press [ to enable.";
+        Text = "Press k to enable.";
         })
 _G.Skiznillett = slow
 end
