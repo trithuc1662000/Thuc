@@ -191,18 +191,21 @@ function respawnf()
 			end
 		end
 	end
-	
-	mouse.KeyDown:connect(function(key)
-if key == "n" then
+noslow = true
+slow = false
+ 
+local mouse = game.Players.LocalPlayer:GetMouse()
+mouse.KeyDown:connect(function(key)
+if key == "[" then
 game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "No-Slow Enabled";
-        Text = "Press n to disable.";
+        Text = "Press ] to disable.";
         })
 _G.Skiznillett = noslow
 elseif key == "-" then
 game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "No-Slow Disabled";
-        Text = "Press n to enable.";
+        Text = "Press [ to enable.";
         })
 _G.Skiznillett = slow
 end
