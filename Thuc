@@ -61,7 +61,7 @@ function respawnf()
 	end
 	function respawnf2()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "Daishi";
+			Title = "Thuc";
 			Text = "FasterReset";
 		})
 	end
@@ -82,13 +82,13 @@ wait(1)
 	end
 	function peace2()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "Daishi";
+			Title = "Thuc";
 			Text = "Welcome";
 		})
 	end
 	local Player = game.Players.LocalPlayer
 	Player.Chatted:connect(function(cht)
-		if cht:match("Secret") then
+		if cht:match("Peace") then
 			peace()
 			peace2()
 		end
@@ -100,7 +100,7 @@ function backspawn()
  
 	function backspawn2()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "Daishi";
+			Title = "Thuc";
 			Text = "BackSpawn";
 		})
 	end
@@ -130,7 +130,7 @@ end end end)
  
 	function godmode2()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "Daishi";
+			Title = "Thuc";
 			Text = "GodMode ON ";
 		})
 	end
@@ -185,7 +185,7 @@ function antiq()
  
 	function antiq2()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "Daishi";
+			Title = "Thuc";
 			Text = "QueueKick Actived";
 		})
 	end
@@ -350,13 +350,13 @@ end
 end)
 local mouse = game.Players.LocalPlayer:GetMouse()
 mouse.KeyDown:connect(function(key)
-    if key == "l" then
+    if key == "y" then
         local plr = game.Players.LocalPlayer
         game.Workspace.Live[plr.Name]["Dragon Throw"].Activator["Throw"]:Destroy()
     end
     end)
 mouse.KeyDown:connect(function(key)
-    if key == "l" then
+    if key == "y" then
         local plr = game.Players.LocalPlayer
         game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Flip"]:Destroy()
         game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Throw"]:Destroy()
