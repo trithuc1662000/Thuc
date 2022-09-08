@@ -350,13 +350,13 @@ end
 end)
 local mouse = game.Players.LocalPlayer:GetMouse()
 mouse.KeyDown:connect(function(key)
-    if key == "y" then
+    if key == "l" then
         local plr = game.Players.LocalPlayer
         game.Workspace.Live[plr.Name]["Dragon Throw"].Activator["Throw"]:Destroy()
     end
     end)
 mouse.KeyDown:connect(function(key)
-    if key == "y" then
+    if key == "l" then
         local plr = game.Players.LocalPlayer
         game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Flip"]:Destroy()
         game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Throw"]:Destroy()
@@ -371,7 +371,7 @@ slow = false
  
 local mouse = game.Players.LocalPlayer:GetMouse()
 mouse.KeyDown:connect(function(key)
-if key == "k" then
+if key == "[" then
 game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "No-Slow Enabled";
         Text = "Press - to disable.";
